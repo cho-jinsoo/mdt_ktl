@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/atmccl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜 : "
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:id="@+id/hk_date_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022.06.01"
+            app:layout_constraintLeft_toRightOf="@+id/tv11"
+            tools:ignore="MissingConstraints"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/atmccl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/atmccl1"
+            tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/hk_name_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="원미산"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/atmccl21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/atmccl2"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/atmc0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="산 레벨 : ">
+            </TextView>
+            <TextView
+                android:id="@+id/hk_level_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="산 레벨"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/atmc0"
+                tools:ignore="MissingConstraints"></TextView>
+            <TextView
+                android:id="@+id/toto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/hk_level_cv">
+            </TextView>
+
+            <TextView
+                android:id="@+id/hk_exp_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="산 경험치"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/toto2"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <TextView
+                android:id="@+id/toto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/hk_exp_cv"
+                />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/atmccl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/atmccl21"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/atmccl4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="총 소요 시간 : "></TextView>
+            <TextView
+                android:id="@+id/hk_recordtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/atmccl4"
+                android:text="00:00:34:33"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/atmccl3"
+            tools:ignore="MissingConstraints">
+
+
+
+
+            <TextView
+                android:id="@+id/startspot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출발지점 : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"></TextView>
+
+
+            <TextView
+                android:id="@+id/hk_start_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="도당산 출발"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/startspot"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <TextView
+                android:id="@+id/finishspot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   ->    도착지점 : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/hk_start_cv"
+                tools:ignore="MissingConstraints"></TextView>
+
+
+
+            <TextView
+                android:id="@+id/hk_finish_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="도당산 정상"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/finishspot"
+                tools:ignore="MissingConstraints"></TextView>
+
+
+
+            <View
+                android:id="@+id/viewbfline4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/gradient"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/finishspot"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

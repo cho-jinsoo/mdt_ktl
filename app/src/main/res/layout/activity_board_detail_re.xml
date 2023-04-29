@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardDetailActivityRe">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/abdr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/bdtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="게시글 상세보기"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                tools:ignore="MissingConstraints">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/empty0"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/abdr1"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/gradient"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+        </LinearLayout>
+
+
+
+     <LinearLayout
+            android:id="@+id/ubd_li_id1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/empty0"
+         >
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_marginLeft="30dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             >
+            <ImageView
+                android:id="@+id/profileimage_ub"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_marginLeft="30dp"
+             android:src="@drawable/songjoongki"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/ubd_u_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toRightOf="@+id/profileimage_ub"
+                tools:ignore="MissingConstraints"></TextView>
+
+         <TextView
+             android:id="@+id/ubd_b_date"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="date"
+             android:textSize="13dp"
+             app:layout_constraintLeft_toRightOf="@+id/profileimage_ub"
+             app:layout_constraintTop_toBottomOf="@id/ubd_u_id"
+             tools:ignore="MissingConstraints"></TextView>
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ubd_li_id1"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/viewbfline3"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@drawable/gradient"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ubd_li_id1"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/ubd_b_title"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="title"
+                android:textSize="18dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/gradienbluee"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ubd_li_id3"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/ubd_b_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="coctents"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/ubd_li_id4"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:text="부적절한 게시글이면 맛동산에 알려주세요. *_*"
+                ></TextView>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/ubd_li_id55"
+            app:layout_constraintTop_toBottomOf="@+id/ubd_li_id5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/liket"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="like.json"
+                app:lottie_loop="false"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            </com.airbnb.lottie.LottieAnimationView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/liket"
+                android:text="좋아요!"
+                android:textColor="@color/black"></TextView>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ubd_li_id6"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/ubd_li_id55"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/viewbfline2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/gradient"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottombdr1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:weightSum="10"
+            app:layout_constraintTop_toBottomOf="@+id/ubd_li_id6"
+            tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/comment_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/comment_boardfree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="8"
+                    tools:ignore="MissingConstraints">
+                </EditText>
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/button_comment_send"
+                    android:text="전송"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp">
+                </Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id8"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/bottombdr1"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/viewbfline4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/gradient"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ubcommentRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/ubd_li_id8"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

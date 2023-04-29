@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_round"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sg_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="0dp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/sg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradienbluee"
+                android:textColor="@color/white"
+                android:text="group_name"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="2dp"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                app:layout_constraintRight_toLeftOf="@+id/sg_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="since : "
+                tools:ignore="MissingConstraints">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/sg_date"
+                android:layout_marginRight="10dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👑 마스터 : "
+                android:textColor="@color/black"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/sg_master"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="master"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌷 동호회 소개 🌷"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/sg_intro"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:text="intro"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/joingroup"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="가입신청"
+            android:layout_gravity="right">
+        </Button>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bdtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/run_mountain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frog"
+        android:text="도전하기"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/empty0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/bdtoolbar"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/m_d_image"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:src="@drawable/wonmi" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/ubd_li_id1"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/viewbfline3"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@drawable/gradient"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="산 이름 : "
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <TextView
+                android:id="@+id/m_d_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="송중기 산"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="산 난이도 : "
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <TextView
+                android:id="@+id/m_d_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="최상"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="산 지역주소 : "
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <TextView
+                android:id="@+id/m_d_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="이탈리아"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="산 소개 : "
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"></TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingTop="10dp"
+            android:text="서울특별시 관악구 신림동과 남현동, 경기도 안양시, 과천시의 경계에 있는 높이 632m의 산."
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id70"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:text=" 정보가 틀릴 경우 문의 남겨주시면 확인 후 변경할게요 *_* "></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id6"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/viewbfline2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/gradient"
+                android:paddingTop="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ubd_li_id8"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/viewbfline4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/gradient"
+                android:paddingTop="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
